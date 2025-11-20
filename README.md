@@ -2,7 +2,7 @@
 This is the repository for my GEOG 464 project at Concordia University. The website displays pedestrian crossings of the CP rail right-of-way in Montréal QC and analyses the walksheds of various formal and informal crossings. 
 
 File Structure
-
+<pre>
 .
 ├── site 
 │   ├── styles.css
@@ -34,3 +34,4 @@ File Structure
 ├── index.html
 ├── LICENSE
 └── README.md
+</pre>
