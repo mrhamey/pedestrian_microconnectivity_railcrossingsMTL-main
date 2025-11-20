@@ -1,0 +1,2307 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": "Reseau Vert",
+        "fid": null,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59913328042116,
+            45.52904470625194
+          ],
+          [
+            -73.59878771561542,
+            45.529146636516934
+          ],
+          [
+            -73.59826941577215,
+            45.52929951759691
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": null,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60033448480065,
+            45.52821058622387
+          ],
+          [
+            -73.60033654035414,
+            45.528232186736226
+          ],
+          [
+            -73.6003478844993,
+            45.52835139503854
+          ],
+          [
+            -73.59931164113496,
+            45.528629882545424
+          ],
+          [
+            -73.59887391764468,
+            45.52875191596294
+          ],
+          [
+            -73.59866159460441,
+            45.528769867722055
+          ],
+          [
+            -73.59861485680386,
+            45.52877381936844
+          ],
+          [
+            -73.59841981339072,
+            45.52883162766191
+          ],
+          [
+            -73.5981503339163,
+            45.52891149772378
+          ],
+          [
+            -73.59796238678108,
+            45.52891149772378
+          ],
+          [
+            -73.59791807247228,
+            45.52891149772378
+          ],
+          [
+            -73.59785092689111,
+            45.52899608773324
+          ],
+          [
+            -73.5977186395541,
+            45.5291284977031
+          ],
+          [
+            -73.59770814385965,
+            45.52913991788827
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": null,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59837555298851,
+            45.52881509078671
+          ],
+          [
+            -73.59841981339072,
+            45.52883162766191
+          ],
+          [
+            -73.59867094019313,
+            45.528925455289
+          ],
+          [
+            -73.59878771561542,
+            45.529146636516934
+          ],
+          [
+            -73.59880386443496,
+            45.52917722349895
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": 1240134.0,
+        "DEB_GCH": 5200.0,
+        "FIN_GCH": 5254.0,
+        "ARR_GCH": "Le Plateau-Mont-Royal",
+        "SENS_CIR": -1.0,
+        "CLASSE": 0.0,
+        "LIE_VOIE": "None",
+        "TYP_VOIE": "avenue",
+        "DIR_VOIE": "None",
+        "NOM_VOIE": "De Gasp\u00e9",
+        "DEB_DRT": 5157.0,
+        "FIN_DRT": 5265.0,
+        "ARR_DRT": "Le Plateau-Mont-Royal",
+        "LIM_GCH": "Montr\u00e9al",
+        "LIM_DRT": "Montr\u00e9al",
+        "POSITION": 5.0,
+        "ODONYME": "Avenue De Gasp\u00e9",
+        "fid": null,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59310216269436,
+            45.525678052339984
+          ],
+          [
+            -73.59329668713127,
+            45.52576394483033
+          ],
+          [
+            -73.593898169978,
+            45.526038875304046
+          ],
+          [
+            -73.59414756017665,
+            45.52615348954314
+          ],
+          [
+            -73.59420962209035,
+            45.52617943361168
+          ],
+          [
+            -73.5942750159822,
+            45.52620763574308
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": 1240228.0,
+        "DEB_GCH": 101.0,
+        "FIN_GCH": 103.0,
+        "ARR_GCH": "Le Plateau-Mont-Royal",
+        "SENS_CIR": 0.0,
+        "CLASSE": 0.0,
+        "LIE_VOIE": "None",
+        "TYP_VOIE": "rue",
+        "DIR_VOIE": "None",
+        "NOM_VOIE": "Maguire",
+        "DEB_DRT": 150.0,
+        "FIN_DRT": 180.0,
+        "ARR_DRT": "Le Plateau-Mont-Royal",
+        "LIM_GCH": "Montr\u00e9al",
+        "LIM_DRT": "Montr\u00e9al",
+        "POSITION": 5.0,
+        "ODONYME": "Rue Maguire",
+        "fid": null,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59475849031976,
+            45.525682323385674
+          ],
+          [
+            -73.59470938951914,
+            45.52573553674373
+          ],
+          [
+            -73.59432130858426,
+            45.52616071297256
+          ],
+          [
+            -73.5942750159822,
+            45.52620763574308
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6045.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60480482072538,
+            45.52848931595739
+          ],
+          [
+            -73.6048280569093,
+            45.52850374370071
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1311.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6029173894571,
+            45.52863017007333
+          ],
+          [
+            -73.6029571001617,
+            45.52864856665345
+          ],
+          [
+            -73.60296237335186,
+            45.52864359866578
+          ],
+          [
+            -73.60296758873514,
+            45.52864603788538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1205.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60424431397769,
+            45.529981878713556
+          ],
+          [
+            -73.60419415046351,
+            45.53003648485453
+          ],
+          [
+            -73.60389549774145,
+            45.53036065412412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1206.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60377726858813,
+            45.5304877523876
+          ],
+          [
+            -73.60373306412146,
+            45.53053483340535
+          ],
+          [
+            -73.60342725761387,
+            45.530863894183675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1207.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60332714134536,
+            45.530973245456984
+          ],
+          [
+            -73.60328556759762,
+            45.531019398883856
+          ],
+          [
+            -73.60301634393382,
+            45.53130409052216
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1208.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6029323817755,
+            45.531417969139525
+          ],
+          [
+            -73.60290573633996,
+            45.531469490119434
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1224.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59401871855745,
+            45.5320600303636
+          ],
+          [
+            -73.59401186663875,
+            45.53206509647874
+          ],
+          [
+            -73.59398503958889,
+            45.53208493163724
+          ],
+          [
+            -73.59383432285837,
+            45.532212974467974
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1258.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60377726858813,
+            45.5304877523876
+          ],
+          [
+            -73.60386716887386,
+            45.530529672002004
+          ],
+          [
+            -73.6042911094429,
+            45.53072241769299
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1265.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6029323817755,
+            45.531417969139525
+          ],
+          [
+            -73.6030278635967,
+            45.53146338475012
+          ],
+          [
+            -73.6033781976134,
+            45.531623039952
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1295.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59780474150557,
+            45.53177682183936
+          ],
+          [
+            -73.59774181618843,
+            45.53184491878521
+          ],
+          [
+            -73.5973546195168,
+            45.53226437716702
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1338.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59780474150557,
+            45.53177682183936
+          ],
+          [
+            -73.59791677274626,
+            45.5318281203659
+          ],
+          [
+            -73.59848640739952,
+            45.532084382958885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 1370.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59401871855745,
+            45.5320600303636
+          ],
+          [
+            -73.59402889664707,
+            45.5320718260476
+          ],
+          [
+            -73.59409223977315,
+            45.532092042995934
+          ],
+          [
+            -73.59422343922121,
+            45.53215152289123
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2666.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59175298054603,
+            45.527985459056616
+          ],
+          [
+            -73.59179228508022,
+            45.52800393199628
+          ],
+          [
+            -73.59213533628231,
+            45.52815874367652
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2669.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59323731423422,
+            45.528656229988236
+          ],
+          [
+            -73.59316466496655,
+            45.528734730700684
+          ],
+          [
+            -73.59303359564203,
+            45.52888392958802
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2739.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60325113938029,
+            45.52614982613192
+          ],
+          [
+            -73.60326565416075,
+            45.526134465574856
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2745.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59268357960903,
+            45.5268546865985
+          ],
+          [
+            -73.5926664519241,
+            45.52687513711406
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2825.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.5904013678488,
+            45.52580237909638
+          ],
+          [
+            -73.59043001734449,
+            45.52581500293668
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2758.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59475849031976,
+            45.525682323385674
+          ],
+          [
+            -73.59483491000593,
+            45.52571833385757
+          ],
+          [
+            -73.59664748009273,
+            45.52655014095662
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2765.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59942807348378,
+            45.525247250323815
+          ],
+          [
+            -73.5994986830648,
+            45.52527934258457
+          ],
+          [
+            -73.600155951133,
+            45.525580817282695
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2782.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59230981358583,
+            45.527305109979366
+          ],
+          [
+            -73.59234935577038,
+            45.527323318884626
+          ],
+          [
+            -73.59383417936534,
+            45.527997367431816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2809.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59310216269436,
+            45.525678052339984
+          ],
+          [
+            -73.59325181745844,
+            45.52574413258597
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2940.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59894520121892,
+            45.525833501095164
+          ],
+          [
+            -73.59903174449168,
+            45.525873879732856
+          ],
+          [
+            -73.59984401027288,
+            45.52624626723292
+          ],
+          [
+            -73.60071576714954,
+            45.52664741739118
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2876.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59475849031976,
+            45.525682323385674
+          ],
+          [
+            -73.59470938951914,
+            45.52573553674373
+          ],
+          [
+            -73.59462637187613,
+            45.525826490021934
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2917.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59525098433808,
+            45.52515153938668
+          ],
+          [
+            -73.59532617591114,
+            45.52518498871414
+          ],
+          [
+            -73.59636272790632,
+            45.52565889453154
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2939.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59589825548458,
+            45.52444987881144
+          ],
+          [
+            -73.59596306545906,
+            45.52447945295564
+          ],
+          [
+            -73.5963905234767,
+            45.52467370697682
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2940.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59894520121892,
+            45.525833501095164
+          ],
+          [
+            -73.59903174449168,
+            45.525873879732856
+          ],
+          [
+            -73.59943206494319,
+            45.52605740904784
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2951.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59997470904622,
+            45.52465065964629
+          ],
+          [
+            -73.60000994953612,
+            45.52466723113201
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2952.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60325113938029,
+            45.52614982613192
+          ],
+          [
+            -73.60327501639544,
+            45.52616038054628
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2956.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59894520121892,
+            45.525833501095164
+          ],
+          [
+            -73.59896067129658,
+            45.52574813162377
+          ],
+          [
+            -73.59920166541907,
+            45.525489627129026
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 2993.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6038813085958,
+            45.52806302390991
+          ],
+          [
+            -73.6039416480448,
+            45.52802340084784
+          ],
+          [
+            -73.60399660312231,
+            45.52799041356998
+          ],
+          [
+            -73.60403870651632,
+            45.527974266537036
+          ],
+          [
+            -73.60405981823726,
+            45.52797019758152
+          ],
+          [
+            -73.60410141888028,
+            45.52796790985539
+          ],
+          [
+            -73.60429759010373,
+            45.52797872691543
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5299.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59763228345128,
+            45.53088103609186
+          ],
+          [
+            -73.59761157429719,
+            45.53083296011338
+          ],
+          [
+            -73.5976095097144,
+            45.53083180870712
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5300.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59763228345128,
+            45.53088103609186
+          ],
+          [
+            -73.59761962274591,
+            45.53093234086361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5441.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59604438622605,
+            45.53210184338795
+          ],
+          [
+            -73.59605750175668,
+            45.53210731192846
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6281.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60473090847691,
+            45.52684195416605
+          ],
+          [
+            -73.60473029629486,
+            45.52685610718753
+          ],
+          [
+            -73.60472644191103,
+            45.526945216511166
+          ],
+          [
+            -73.60475614345144,
+            45.526970870351605
+          ],
+          [
+            -73.60477285582762,
+            45.52698530517462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5843.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60503058055365,
+            45.52787386771169
+          ],
+          [
+            -73.60524932646321,
+            45.52787478126318
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5845.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60503225450742,
+            45.527801710997366
+          ],
+          [
+            -73.60520268371195,
+            45.52780197962419
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5908.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59427620419338,
+            45.532054264349384
+          ],
+          [
+            -73.59451877709812,
+            45.53216567734147
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5910.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.5943524263215,
+            45.53199524580199
+          ],
+          [
+            -73.59468568506799,
+            45.53214577851295
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5912.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.5925167357429,
+            45.53121126921415
+          ],
+          [
+            -73.59259912127116,
+            45.53126866142887
+          ],
+          [
+            -73.59260544422622,
+            45.53127264887072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 5914.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59275611145799,
+            45.53124968716848
+          ],
+          [
+            -73.59289765932732,
+            45.531332043700914
+          ],
+          [
+            -73.59293692228201,
+            45.531350008828625
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6294.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6055940155777,
+            45.52851492767874
+          ],
+          [
+            -73.60558424575221,
+            45.52852802110611
+          ],
+          [
+            -73.60557963182204,
+            45.52853420465047
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6084.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.5984947133021,
+            45.53103691265347
+          ],
+          [
+            -73.59860753765302,
+            45.531092925654555
+          ],
+          [
+            -73.60022739711701,
+            45.5318278648672
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6215.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.6059502535371,
+            45.52858296570082
+          ],
+          [
+            -73.60558424575221,
+            45.52852802110611
+          ],
+          [
+            -73.60555198222694,
+            45.52852317774668
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6239.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.59399781173265,
+            45.53192791228508
+          ],
+          [
+            -73.59389469398822,
+            45.53201879457582
+          ],
+          [
+            -73.59376060316657,
+            45.53213697460832
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_TRC": null,
+        "DEB_GCH": null,
+        "FIN_GCH": null,
+        "ARR_GCH": null,
+        "SENS_CIR": null,
+        "CLASSE": null,
+        "LIE_VOIE": null,
+        "TYP_VOIE": null,
+        "DIR_VOIE": null,
+        "NOM_VOIE": null,
+        "DEB_DRT": null,
+        "FIN_DRT": null,
+        "ARR_DRT": null,
+        "LIM_GCH": null,
+        "LIM_DRT": null,
+        "POSITION": null,
+        "ODONYME": null,
+        "fid": 6282.0,
+        "crossing_id": 9,
+        "crossing_name": "Outdoor Gym Crossing",
+        "network_file": "data/roadnetwork_clipped_pedestrian_Gymcrossing.geojson",
+        "reachable_nodes": 569,
+        "max_distance": 800
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.60475961795827,
+            45.526951092902316
+          ],
+          [
+            -73.60475614345144,
+            45.526970870351605
+          ],
+          [
+            -73.60475486754538,
+            45.52697813301152
+          ]
+        ]
+      }
+    }
+  ]
+}

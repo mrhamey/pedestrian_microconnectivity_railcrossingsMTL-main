@@ -1,0 +1,275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.618208,
+          45.526174
+        ]
+      },
+      "properties": {
+        "name": "Avenue de l’Épée Crossing",
+        "category": "Under_Construction",
+        "description": "New crossing under construction by the City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.611474,
+          45.526335
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Parc Crossing (van Horne)",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue du Parc and van Horne"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.616586,
+          45.524966
+        ]
+      },
+      "properties": {
+        "name": "Avenue Thèrése-Lavoie-Roux Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue Thèrese-Lavoie-Roux."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.616861,
+          45.528758
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Parc Crossing (Beaumont)",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue du Parc and Avenue Beaumont."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.606791,
+          45.528236
+        ]
+      },
+      "properties": {
+        "name": "Rue Clarke Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Rue Clarke"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.603518,
+          45.527919
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Saint Laurent Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Boulevard Saint Laurent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.602992,
+          45.527991
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Rosemont Crossing",
+        "category": "Formal_Crossing",
+        "description": "Staircase up to the Rosemont Viaduc that allows users to descend again at the Avenue de Gaspé alignment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.601335,
+          45.528435
+        ]
+      },
+      "properties": {
+        "name": "Skatepark Crossing",
+        "category": "Informal_Crossing",
+        "description": "Informal crossing often cut by the Mile End Skatepark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.598539,
+          45.529084
+        ]
+      },
+      "properties": {
+        "name": "Outdoor Gym Crossing",
+        "category": "Informal_Crossing",
+        "description": "Informal crossing often cut between the outdoor gym and Rue Saint Denis, connecting to the Champs des Possibles. "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.596382,
+          45.530084
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint Denis Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Rue Saint Denis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.594084,
+          45.531930
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint Hubert Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Rue Saint Hubert"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.591974,
+          45.533526
+        ]
+      },
+      "properties": {
+        "name": "Avenue Christophe Colombe Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue Christophe Colombe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.586238,
+          45.538355
+        ]
+      },
+      "properties": {
+        "name": "Avenue Papineau Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue Papineau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.583416,
+          45.540296
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lorimier Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Avenue de Lorimier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.579686,
+          45.541459
+        ]
+      },
+      "properties": {
+        "name": "Rue Masson Crossing",
+        "category": "Formal_Crossing",
+        "description": "Crossing underpass at Rue Masson"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.585578,
+          45.539014
+        ]
+      },
+      "properties": {
+        "name": "Rue Cartier Crossing",
+        "category": "Informal_Crossing",
+        "description": "Informal crossing often cut near Avenue Papineau to avoid the larger underpass system"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6210,
+          45.5230
+        ]
+      },
+      "properties": {
+        "name": "Campus MIL Overpass",
+        "category": "Formal_Crossing",
+        "description": "Mixed-use crossing built as part of the Campus MIL project to connect with Acadie station."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.623592,
+          45.53148
+        ]
+      },
+      "properties": {
+        "name": "Gare du Parc Crossing",
+        "category": "Formal_Crossing",
+        "description": "Level crossing at Gare du Parc."
+      }
+    }
+  ]
+}

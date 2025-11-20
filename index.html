@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Microconnectivity and Rail Crossings in Montréal, QC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- main CSS style sheet-->
+ <link rel="stylesheet" href="site/styles.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+ 
+</head>
+<body>
+<h2 class="page-title">
+  Mind the Gap: Pedestrian Microconnectivity and Rail Crossings along the CP Rail Right-of-Way in Montréal, QC
+</h2>
+ <div class="container">
+    <!-- Top Map Section -->
+    <div class="map-container">
+      <div id="map"></div>
+      <div id="info-panel">
+  <h4 id="info-name">Select a crossing</h4>
+  <p id="info-desc">Click a point on the map to see walkshed details here.</p>
+  <p id="info-w400m"></p>
+  <p id="info-w800m"></p>
+</div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <div class="legend">
+  <h3>Legend</h3>
+  <ul>
+    
+    
+    <li><span class="dot-formal">●</span> Formal Crossings</li>
+    <li><span class="dot-informal">●</span> Informal Crossings</li>
+    <li><span class="dot-underconstruction">●</span> Formal Crossing Under Construction</li>
+    <li>
+      <span class="line street-path"></span>
+      Street and path network
+    </li>
+    <li>
+      <span class="line innerwalkshed"></span>
+      400m (~5 mins) walkshed
+    </li>
+    <li>
+      <span class = "line outerwalkshed"></span>
+      800m (~10 mins) walkshed
+    </li>
+    <li>
+      <span class="line rail-line"></span>
+      Rail line
+    </li>
+    <li><span class="line reseau-vert"></span>
+      Réseau Vert
+    </li>
+  </ul>
+</div>
+    <div class="info-box">
+  <div class="tab-header">
+    <button class="tab-link active" onclick="openTab(event, 'tab1')">About</button>
+    <button class="tab-link" onclick="openTab(event, 'tab2')">History</button>
+    <button class="tab-link" onclick="openTab(event, 'tab3')">Network Connectivity and Equity</button>
+    <button class="tab-link" onclick="openTab(event, 'tab4')">Results & Analysis</button>
+    <button class="tab-link" onClick="openTab(event, 'tab5')">Research Methods and Limitations</button>
+  </div> 
+
+  <div class="tab-content">
+   <div id="tab1" class="tab-page active">
+      <p><strong>Montréal's otherwise regular street grid is broken at various points by rail right of ways, in use by 
+      either its commuter rail network (EXO) or freight rail (CP Rail). </strong><br><br> This project focuses on the rail dividing the boroughs of Plateau Mont Royal 
+      and Outremont in the South from the boroughs of Villeray–Saint-Michel–Parc-Extension and Rosemont-La Petite-Patrie. <br><br>
+    
+      This project analyses the walksheds of different crossings in the area to assess the extent to his rail forms a barrier to (pedestrian) network connectivity. <strong>A walkshed is the area of network that is reachable on foot within a certain time from a point; for the microconnectivity scale of this project, 400m and 800m walksheds are analysed, representing 5- and 10-minute walking radii. </strong> <br><br>
+
+      The mapping of formal and informal crossings shows the extent to which this rail forms a barrier to (pedestrian) network connectivity. Conversely, it also 
+      shows the opportunities for the redesign of public space to better allow users of all mobility to access their 
+      homes, their workplaces, and other places of interest - work that is already undertaken by the City in the case of the new 
+      crossing planned at the De l'Épée crossing in Outremont. <br> <br>
+      
+      This project was made by Michael Rhamey for GEOG 464 at Concordia University. 
+    
+    </p>
+    </div>
+    <div id="tab2" class="tab-page">
+      <p>
+The CP Rail right-of-way was built in 1876 as part of the Montreal Northern Colonization Railway, leading north from central Montréal (down by Papineau and St Catherine) into the Laurentides. A Mile End station was constructed as part of the development and incorporation of the area; it operated until 1931 and was demolished in 1970. Purchased by Canadian Pacific in 1882, the line is still in use to transfer freight and locomotives between yards in Côte Saint-Luc and the Port of Montréal. Montréal has since developed into the urban form and communities we know today, with the right-of-way serving to separate the boroughs of Villeray–Saint-Michel–Parc-Extension, Outremont, the Plateau Mont-Royal, and Rosemont-La-Petite-Patrie.
+<br><br>
+The right-of-way still finds itself at the center of the area’s continued development. The area began to gentrify in the 1980s and 1990s and now hosts thousands of jobs in converted warehouses and other formerly industrial buildings. Beginning in the 1980s, the construction of the Réseau Vert multi-use path along the majority of its length allows for a separated right-of-way for pedestrians and cyclists to efficiently traverse the grid of streets, despite the obstacle to connectivity that it presents transversally (across the lines).  In 2019, the Canadian Transportation Agency (CTA) ruled on the City’s five proposed crossings: while the level crossings at Gare du Parc and at the de l’Épée crossings are approved, the crossings at Saint Dominique and Henri-Julien (between Saint Laurent and Saint Denis, the most frequently informally-crossed section) are deemed too obstructive to rail activities. Furthermore, the CTA ruled that crossings must come at the City’s expense, forming an important political barrier to action. However, the arrival of the Université de Montréal’s Campus MIL project in 2006 brought additional pressure and funding to construct new crossings, leading to an underpass on Avenue Therese-Lavoie-Roux in 2015 and the mixed-use overpass aligned with Blvd. Acadie in 2018. 
+<br><br>
+The line continues to attract attention due to the number of fines and fatalities that occur due to trespassing onto the right-of-way, most often by commuters and neighbours trying to cut a few minutes off their journeys to work or homes. In February 2022, a woman was struck and killed while crossing. Despite the extant CTA ruling, this recent fatality was still insufficient to get political actors moving to remedy the situation; CP Rail was further ordered to reduce speeds, to use the engine bell during the daytime, and to more regularly patrol the area, but there are no further plans for formal crossings in that area. Nevertheless, crossings, fines, and safety risks persist. 
+<br><br>
+Sources: <br>
+
+http://memoire.mile-end.qc.ca/en/4-3-la-famille-beaubien-et-la-gare-du-mile-end/<br>
+http://memoire.mile-end.qc.ca/en/histoire-du-quartier-mile-end-prologue/<br>
+http://memoire.mile-end.qc.ca/en/gare/<br>
+https://www.cbc.ca/news/canada/montreal/montreal-mile-end-pedestrian-crossing-canadian-pacific-1.6374736<br>
+https://www.ctvnews.ca/montreal/article/young-womans-death-on-mile-end-train-tracks-brings-fresh-anger-to-old-stalemate-over-safe-crossing/<br>
+https://otc-cta.gc.ca/eng/ruling/34-r-2019<br>
+https://campusmil.umontreal.ca/le-campus/historique-du-projet/<br>
+https://www.lapresse.ca/debats/chroniques/rima-elkouri/201201/25/01-4489145-les-lignes-de-desir.php<br>
+      </p>
+    </div>
+    <div id="tab3" class="tab-page">
+      <p><i> Connectivity</i> in urban network design refers to the extent to which nodes (or points on the network) are able to be reached from others. Beyond a simple number of connections, it also refers to the level of spatial integration within an area, with impacts on social and ecological dynamics within the urban system. Similar to connectivity, network <i> porosity </i> deals with the capacity of these connections to manage the flows of people. Porosity also integrates the various means of navigating a network - the modes of transport. By focusing on walksheds and pedestrian access, this project fits with the scale and dataset availability of the project, due to the preponderance of pedestrian roads in the study area and the ubiquity of sidewalks on roads. The study of connectivity also raises questions surrounding equity in the urban environment; the lack of pedestrian crossings could lead to car users spending disproportionately less time navigating around the CP rail right-of-way than their pedestrian counterparts. This means that local, pedestrian trips within the neighbourhood and community are less facilitated than the transportation requirements of visitors or those benefiting from private transportation. <br>
+<br>
+ The lack of crossings poses a more significant barrier to those with mobility constraints. Regarding the latter, the informal crossings lack a flush crossing of the rails, meaning those using mobility devices (notably wheelchairs) cannot use the crossings. Formal level crossings must also be designed to accommodate users with mobility devices, especially as uneven surfaces, gaps between pavement and the rails, and crossings at an angle can all lead to devices getting stuck in the rails and requiring immediate help to clear the tracks. The staircases installed to connect the Mile End Skatepark to the outdoor gym along the Reseau Vert via the viaduc Rosemont Van Horne form a similar barrier to people with different mobility requirements. The Papineau crossing also requires a significant detour or the use of staircases (one of which is permanently closed) to cross the tracks, with the whole length of the underpass totalling roughly 400m, or a five-minute walk. 
+<br><br>
+Altogether, the different crossings across the rails allow for the interconnection of the area’s neighbourhoods and communities. However, the current layout of crossings clearly leaves some users unsatisfied and some needs unmet, mainly in the lack of direct crossings in the area between Saint Laurent and Saint Denis and the Avenue Papineau area, as evidenced by the crossings frequently being cut in the area. </p>
+    <br><br>
+    </div>
+    <div id="tab4" class="tab-page">
+      <div id="graph_walksheds_ordered"></div>
+      <br> <br>
+      <p style="text-indent: 40px;">The graph above shows the walksheds. Many of the walksheds with the most meters of network are concentrated around the Clarke - Saint Denis corridor, with the two leading crossings being the Saint Laurent and Skatepark crossings. This is probably due to the density of overlapping infrastructure in the area, namely the Rosemont Viaduc above. Similarly, many of these crossings' use of road underpasses means that these crossings are often embedded within larger infrastructure networks, as illustrated in the more extreme case of the Papineau underpass system that involves several feeder roads and connections, as the underpass effectively passes under an additional three blocks of distance (passing under Rue des Carrières). Crossings to which the regular street grid tends to approach without disruption tend to have higher walksheds due to the interconnection with other streets beyond the immediate lead-up. The presence of informal crossings near other formal crossings with large infrastructure barriers (notably the Rosemont viaduc and the Papineau underpass) shows the extent to which people's desired connections (measured through the presence of informal crossings) may be more linked to ease-of-access and network friction rather than any suspected 'direct' connectivity gain.<br> <br>
+
+      <p style="text-indent: 40px;">An essential part of this project process would have been the study of marginal increases in connectivity provided by the three informal crossings, to answer the research objective of “What crossings could be introduced to most increase the connectivity around the CP Rail Right-of-Way?” However, the limits of my base data files meant that my analysis operations were unable to generate unique walksheds properly. These are included in my GitHub repository for cursory consultation but cannot be meaningfully integrated into my research. This is discussed further in the “Research Methods & Limitations” section. <br> <br></p>
+
+      <p style="text-indent: 40px;">However, this mapping project still manages to illustrate the connectivity issues and opportunities presented by the CP Rail right-of-way in Montréal, and also opens up future research directions to clean up network data, analyze marginal connectivity improvements for new crossings, as well as the potential to use the algorithms developed to analyse other cities and rail right-of-ways. </p>
+
+    </div>
+    <div id="tab5" class="tab-page">
+      <p style="text-indent: 40px;">This project began with the creation of a crossing points database of all crossings along this section of rail. The informal crossings were assessed in early October 2025 through field work and are likely to change over the course of months as CP rail authorities patrol and seal up holes in the fence. The road network underlying all analysis was a shapefile provided by the Ville de Montréal. However, it must be noted that the shapefile lacked pedestrian or mixed-use paths; I used geojson.io to add these lines by hand, as the Reseau Vert and the area around the Champ des Possibles figure prominently in the walkshed analysis. <br> <br> </p>
+      <p style="text-indent: 40px;">A Python algorithm was then constructed to associate each crossing point with its nearest line geometry (as the coordinates and lines do not overlap exactly). This was then used to perform network analysis of all network lines that lie within 400m and 800m of the start point. 400m and 800m were chosen as these represent roughly the distance that one can expect to travel within 5 and 10 minutes, an appropriate scale of analysis for this project on microconnectivity. While the algorithm was designed initially to cut within segments once the target distances along the network were reached, this was unable to be performed or troubleshot. Furthermore, the configuration of the base network file and its attributes meant that some ‘floating’ segments were identified as within the network. Again, this could not be resolved. These network walksheds were then exported into GeoJSON files and added as layers to a Leaflet webmap. A click event listener is added such that clicking on crossing points displays their walksheds, as well as information on the total network length within the 400m and 800 distances, and a description of the point. The total length of the network within the distances is also displayed. <br> <br> </p>
+	    <p style="text-indent: 40px;">However, it should be noted that the issues with the road network basefile and its settings also prevented my ability to assess the marginal increase in connectivity (i.e. the area of the street network now within the walkshed that was not already within a crossing’s walkshed) provided by the three informal crossings. The algorithm devised to filter the data for lines that are only within the walkshed for these three unique crossings returned many incorrect features that clearly violated the logic. Due to time constraints on this project and the lack of a clear solution on how to fix the base road network files, I decided not to proceed with this analysis. Ultimately, this project still manages to explore the connectivity issues around the CP Rail right-of-way and the different measures undertaken by the city and citizens to address these. Further data could be integrated into this project, notably user frequency for the crossings. <br> <br> </p>
+      <p style="text-indent: 40px;">All files related to this project can be found in my <a href="https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL">GitHub repository</a>. A readme file is provided with more information on the different files and operations, and a bibliography is also provided. </p>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Proj4JS (for coordinate conversion) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.2/proj4.js"></script>
+
+
+  <!--  main JS app file -->
+  <script src="site/app.js"></script>
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.30.1.min.js"></script>
+  <!-- the plotly graph of the walksheds  -->
+
+  <script>
+    fetch('site/graph_walksheds_ordered.html')
+      .then(r => r.text())
+      .then(html => {
+       const container = document.getElementById('graph_walksheds_ordered');
+
+        // Inject HTML
+        container.innerHTML = html;
+
+        // Execute any <script> tags inside the loaded HTML
+        const scripts = container.querySelectorAll("script");
+        scripts.forEach(oldScript => {
+            const newScript = document.createElement("script");
+            if (oldScript.src) {
+               newScript.src = oldScript.src;
+            } else {
+                newScript.textContent = oldScript.textContent;
+            }
+            document.body.appendChild(newScript);
+            oldScript.remove();
+        });
+
+        // Ensure sizing works
+        if (window.Plotly) {
+            Plotly.Plots.resize(container);
+        }
+      });
+  </script>
+  
+
+
+
+
+</body>
+</html>
+    
+
+    
