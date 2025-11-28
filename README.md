@@ -56,7 +56,7 @@ This contains a Leaflet webmap (whose construction can be viewed in the app.js f
 
 [/Site:](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/tree/main/site)
 The site folder contains the app.js file that builds the Leaflet webmap. It also contains various python files used to create the walksheds. 
-- [styles.css](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/styles.css )is the css file that structures my index.html and styles its elements. Also contains the style classes for the webmap and its legend. 
+- [styles.css](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/styles.css ) is the css file that structures my index.html and styles its elements. Also contains the style classes for the webmap and its legend. 
 - [Compute_walksheds.py](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/compute_walksheds.py) contains the algorithm used to associate crossings to the relevant network file, construct a network graph using the networkx package, calculate the road segments that are within 400m and 800m of the origin point, and then generate a new reachable_lines_XXXm.geojson file containing these features (and a backup). 
 - [Walkshed_summaries.py](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/walkshed_summaries.py) reads the reachable_lines_XXXm.geojson file and sums together the lengths of the walkshed segments to generate the total length of network in the walkshed, which is then exported into walkshed_network_lengths.csv (see /data file explanations)
     - [mergingplaces_walksheds.py](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/mergingplaces_walkshed.py) then attributes these sums to the crossings (places.geojson) in order to be able to display these attributes on the webmap. 
@@ -66,9 +66,9 @@ The site folder contains the app.js file that builds the Leaflet webmap. It also
     - However, the algorithm does not function as intended and includes many segments that are clearly within the walkshed of other crossings. Due to a lack of resources, I was unable to refine this further and try to come up with a solution.
 
 /Data: 
-The /data folder contains all data files used for the construction of my web map
+The [/data](/data) folder contains all data files used for the construction of my web map
 
-places.geojson is a collection of all informal, formal, and under-construction crossings of the CP rail right-of-way in the study area. 
+- [places.geojson](/data/places.geojson) is a collection of all informal, formal, and under-construction crossings of the CP rail right-of-way in the study area. 
 places_with_walksheds.geojson contains the same information as places.geojson, just with the walkshed summary info added to it (see /site file explanations)
 The reseauvert.geojson contains a line corresponding to the mixed-use Reseau Vert trail, the length of the corridor, to better illustrate the study area 
 Reachable_lines_XXXm.geojson + backups contain the walksheds of each crossing, composed of line segments, calculated in compute_walksheds.py (see /site file explanations)
