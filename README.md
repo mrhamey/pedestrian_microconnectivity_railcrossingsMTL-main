@@ -43,7 +43,8 @@ Acknowledgements:
 I would like to thank Professor Russell and Cameron Bruhbacker at Concordia University for teaching me everything I know about coding in Python. I would like to thank generative AI for assisting me with everything else that was needed for this project. 
 
 Licence 
-See the licence file
+See the [licence](LICENSE) file
+
 
 The project 
 This project, designed to be viewed through the index.html file, contains a website exploring microconnectivity issues related to the CP Rail right-of-way in Montréal, QC. The project uses formal and informal crossings as a starting point to investigate the extent to which they allow for users to cross the rail right-of-way barrier. A walkshed is defined as the length of network that is accessible within a given distance from a crossing; 5 and 10 minute walksheds are used throughout this project to show how users might cross the rail in their local neighbourhood to access destinations on opposite sides. The walkshed can be expressed as either a sum of networks in meters (useful for comparing between crossings) or illustrated on the map to show areas that are better served by crossings. 
