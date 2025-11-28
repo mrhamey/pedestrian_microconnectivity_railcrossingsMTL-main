@@ -68,20 +68,17 @@ The site folder contains the app.js file that builds the Leaflet webmap. It also
 /Data: 
 The [/data](/data) folder contains all data files used for the construction of my web map
 
-- [places.geojson](/data/places.geojson) is a collection of all informal, formal, and under-construction crossings of the CP rail right-of-way in the study area. 
-places_with_walksheds.geojson contains the same information as places.geojson, just with the walkshed summary info added to it (see /site file explanations)
-The reseauvert.geojson contains a line corresponding to the mixed-use Reseau Vert trail, the length of the corridor, to better illustrate the study area 
-Reachable_lines_XXXm.geojson + backups contain the walksheds of each crossing, composed of line segments, calculated in compute_walksheds.py (see /site file explanations)
-roadnetwork_clipped_pedestrian_default.geojson is the road network file provided by the City of Montréal with some additional geometries added by me in order to integrate the various pedestrian paths (ex., Réseau vert) in the area. This file notably lacks all networks associated with the informal or under-construction crossings, such that the walkshed for formal crossings does not integrate any additional connectivity provided by the informal or under-construction crossings. 
+- [places.geojson](/data/places.geojson) is a collection of all informal, formal, and under-construction crossings of the CP rail right-of-way in the study area.
+- [places_with_walksheds.geojson](/data/places_with_waksheds.geojson) contains the same information as places.geojson, just with the walkshed summary info added to it (see /site file explanations)
 
-The other roadnetwork_clipped_pedestrian_XXX.geojson files are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
-- Outdoor_Gym_Crossing_uniquewalkshed.geojson is a test unique walkshed file that shows the additional network added to the walksheds around the CP Rail right-of-way. It shows the issues in the algorithm (areas clearly within the walkshed of other crossings) and should not be considered for analysis. Again, for illustrative purposes only. 
+- The [reseauvert.geojson](/data/reseauvert.geojson) contains a line corresponding to the mixed-use Reseau Vert trail, the length of the corridor, to better illustrate the study area
+- [reachable_lines_400m.geojson](/data/reachable_lines_400m.geojson)  + backups contain the walksheds of each crossing, composed of line segments, calculated in compute_walksheds.py (see /site file explanations)
+          - see [reachable_lines_800m.geojson](/data/reachable_lines_800m.geojson) for the equivalent but at the larger, 10 minute walkshed. 
 
+[roadnetwork_clipped_pedestrian_default.geojson](/data/roadnetwork_clipped_pedestrian_default.geojson) is the road network file provided by the City of Montréal with some additional geometries added by me in order to integrate the various pedestrian paths (ex. Réseau vert) in the area. This file notably lacks all networks associated with the informal or under-construction crossings, such that the walkshed for formal crossings does not integrate any additional connectivity provided by the informal or under-construction crossings. 
 
-
-
-
-
+The other roadnetwork_clipped_pedestrian_XXX.geojson files (ex. [roadnetwork_clipped_pedestrian_Cartiercrossing.geojson](/data/roadnetwork_clipped_pedestrian_Cartiercrossing.geojson)are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
+- [Outdoor_Gym_Crossing_uniquewalkshed.geojson](/data/Outdoor_Gym_Crossing_uniquewalkshed.geojson) is a test unique walkshed file that shows the additional network added to the walksheds around the CP Rail right-of-way. It shows the issues in the algorithm (areas clearly within the walkshed of other crossings) and should not be considered for analysis. Again, for illustrative purposes only. 
 
 
 FAQ 
