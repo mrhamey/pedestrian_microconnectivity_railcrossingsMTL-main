@@ -76,8 +76,8 @@ The [/data](/data) folder contains all data files used for the construction of m
           - see [reachable_lines_800m.geojson](/data/reachable_lines_800m.geojson) for the equivalent but at the larger, 10 minute walkshed. 
 
 [roadnetwork_clipped_pedestrian_default.geojson](/data/roadnetwork_clipped_pedestrian_default.geojson) is the road network file provided by the City of Montréal with some additional geometries added by me in order to integrate the various pedestrian paths (ex. Réseau vert) in the area. This file notably lacks all networks associated with the informal or under-construction crossings, such that the walkshed for formal crossings does not integrate any additional connectivity provided by the informal or under-construction crossings. 
-
-The other roadnetwork_clipped_pedestrian_XXX.geojson files (ex. [roadnetwork_clipped_pedestrian_Cartiercrossing.geojson](/data/roadnetwork_clipped_pedestrian_Cartiercrossing.geojson)are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
+    - The other roadnetwork_clipped_pedestrian_XXX.geojson files (ex. [roadnetwork_clipped_pedestrian_Cartiercrossing.geojson](/data/roadnetwork_clipped_pedestrian_Cartiercrossing.geojson))are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
+    
 - [Outdoor_Gym_Crossing_uniquewalkshed.geojson](/data/Outdoor_Gym_Crossing_uniquewalkshed.geojson) is a test unique walkshed file that shows the additional network added to the walksheds around the CP Rail right-of-way. It shows the issues in the algorithm (areas clearly within the walkshed of other crossings) and should not be considered for analysis. Again, for illustrative purposes only. 
 
 
