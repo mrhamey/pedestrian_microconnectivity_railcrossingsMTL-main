@@ -37,7 +37,7 @@ fig = px.bar(
              y="meters",
              color="walkshed",
              hover_data={"meters": True, "name": False, "walkshed": False},
-             labels={"meters": "Network length (m)", "name": "Crossing"},
+             labels={"meters": "Network length (m)", "name": "Crossing Name (ordered West-East)"},
              title="Walkshed Network Length per Crossing",
              color_discrete_map={
                 "walkshed_400m": "#62b955",  # green for 400m

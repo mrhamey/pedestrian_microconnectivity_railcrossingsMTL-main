@@ -1,6 +1,6 @@
 import geopandas as gpd
 import networkx as nx
-from shapely.geometry import Point
+from shapely.geometry import Point, LineString
 from shapely.strtree import STRtree
 from shapely import union_all
 from shapely.ops import snap, substring
@@ -117,42 +117,96 @@ for max_distance in walk_distances:
         lengths = nx.single_source_dijkstra_path_length(G, start_node, cutoff=max_distance, weight="weight")
         print(f"   ✅ Found {len(lengths)} reachable nodes (within {max_distance} m)")
 
-        # --- Clip segments ---
-        reachable_edges = set()
-        partial_segments = []
+       # --- Correct graph-splitting partial segment logic ---
+        reachable_full_segments = []   # full reachable edge geometries
+        partial_segments = []          # clipped edge geometries
 
-        for (u, v, data) in G.edges(data=True):
+        for (u, v, data) in list(G.edges(data=True)):
+
             u_dist = lengths.get(u)
             v_dist = lengths.get(v)
 
+            # Case 0 — completely unreachable
+            if u_dist is None and v_dist is None:
+                continue
+
+            # Case 1 — both endpoints reachable: whole segment reachable
             if u_dist is not None and v_dist is not None:
-                reachable_edges.add(data["fid"])
-            elif u_dist is not None or v_dist is not None:
-                inside_dist = u_dist if u_dist is not None else v_dist
-                geom = roads.iloc[data["fid"]].geometry
-                if geom is None:
-                    continue
+                segment = LineString([u, v])
+                reachable_full_segments.append({
+                    "fid": data["fid"],
+                    "geometry": segment
+                })
+                continue
 
-                edge_len = geom.length
-                remaining = max_distance - inside_dist
+            # Case 2 — only one endpoint reachable (partial candidate)
+            if u_dist is not None:
+                inside_node = u
+                outside_node = v
+                inside_dist = u_dist
+            else:
+                inside_node = v
+                outside_node = u
+                inside_dist = v_dist
 
-                if remaining > 0 and remaining < edge_len:
-                    try:
-                        truncated = substring(geom, 0, remaining, normalized=False)
-                        partial_segments.append({
-                            "fid": data["fid"],
-                            "geometry": truncated
-                        })
-                    except Exception as e:
-                        print(f"   ⚠️ substring error on fid={data['fid']}: {e}")
+            remaining = max_distance - inside_dist
+            if remaining <= 0:
+                continue
 
-        # Convert to GeoDataFrame
-        partial_gdf = gpd.GeoDataFrame(partial_segments, geometry="geometry", crs=roads.crs) if partial_segments else \
-                      gpd.GeoDataFrame(columns=["fid", "geometry"], geometry="geometry", crs=roads.crs)
+            segment = LineString([inside_node, outside_node])
+            seg_len = segment.length
 
-        full_gdf = roads.loc[list(reachable_edges)].copy() if reachable_edges else \
-                   gpd.GeoDataFrame(columns=roads.columns, geometry="geometry", crs=roads.crs)
+            # Entire segment reachable
+            if remaining >= seg_len:
+                reachable_full_segments.append({
+                    "fid": data["fid"],
+                    "geometry": segment
+                })
+                continue
 
+            # Partial segment
+            cut_point = segment.interpolate(remaining, normalized=False)
+            cut_node = (cut_point.x, cut_point.y)
+            print(f"✂️ PARTIAL fid={data['fid']} remaining={remaining:.2f} seg_len={seg_len:.2f}")
+
+            truncated = LineString([inside_node, cut_node])
+            partial_segments.append({
+                "fid": data["fid"],
+                "geometry": truncated
+            })
+
+            # Modify graph to stop traversal beyond the cutoff
+            if G.has_edge(u, v):
+                G.remove_edge(u, v)
+
+            G.add_node(cut_node)
+            G.add_edge(
+                inside_node, cut_node,
+                fid=data["fid"],
+                weight=remaining
+            )
+
+        # Build GDFs
+        if reachable_full_segments:
+            full_gdf = gpd.GeoDataFrame(reachable_full_segments, geometry="geometry", crs=roads.crs)
+        else:
+            full_gdf = gpd.GeoDataFrame(columns=["fid", "geometry"], geometry="geometry", crs=roads.crs)
+
+        if partial_segments:
+            partial_gdf = gpd.GeoDataFrame(partial_segments, geometry="geometry", crs=roads.crs)
+        else:
+            partial_gdf = gpd.GeoDataFrame(columns=["fid", "geometry"], geometry="geometry", crs=roads.crs)
+
+        # Merge road attributes from original table
+        attrs = roads.drop(columns="geometry")
+
+        if not full_gdf.empty:
+            full_gdf = full_gdf.merge(attrs, left_on="fid", right_index=True, how="left")
+
+        if not partial_gdf.empty:
+            partial_gdf = partial_gdf.merge(attrs, left_on="fid", right_index=True, how="left")
+
+        # Combine final reachable geometry
         reachable_roads = pd.concat([full_gdf, partial_gdf], ignore_index=True, sort=False)
         reachable_roads = gpd.GeoDataFrame(reachable_roads, geometry="geometry", crs=roads.crs)
 

@@ -53,6 +53,16 @@
   opacity: 1;
 }
 
+/* Magenta unique-walkshed line */
+.legend li span.uniquewalkshed {
+  width: 20px;
+  height: 4px;
+  background-color: #FF00FF; /* magenta */
+  opacity: 1;
+}
+
+
+
 /* Grey/white striped rail line */
 .legend li span.rail-line {
   width: 30px;

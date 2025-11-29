@@ -16,7 +16,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 20
 let streetsData = null;
 
 // --- Load the road network GeoJSON ---
-fetch('data/roadnetwork_mtl_CLIPPED.geojson')
+fetch('data/roadnetwork_clipped_pedestrian_default.geojson')
     // this is a roadnetwork file that has been clipped to save resources and 
     // to focus on the study area. Tool used : https://mapshaper.org to save as csv, then https://geojson.io to convert csv to geojson
     .then(r => r.json())
@@ -121,6 +121,8 @@ let reachableLayer400 = null;
 let reachableLayer800 = null;
 let reachableLayer400Outline = null;
 let reachableLayer800Outline = null;
+let uniqueLayer = null;
+
 
 // Load 400m file
 fetch('data/reachable_lines_400m.geojson')
@@ -138,7 +140,26 @@ fetch('data/reachable_lines_800m.geojson')
         console.log("✅ 800m reachable lines loaded:", reachable800.features.length);
     });
 
+// --- Load UNIQUE WALKSHEDS ---
+let uniqueWalksheds = {};  // name → GeoJSON
 
+const uniqueFiles = {
+    "Avenue de l’Épée Crossing": "data/Avenue_de_l’Épée_Crossing_uniquewalkshed.geojson",
+    "Skatepark Crossing": "data/Skatepark_Crossing_uniquewalkshed.geojson",
+    "Rue Cartier Crossing": "data/Rue_Cartier_Crossing_uniquewalkshed.geojson",
+    "Outdoor Gym Crossing": "data/Outdoor_Gym_Crossing_uniquewalkshed.geojson"
+};
+
+// Load each unique file
+for (const [crossingName, path] of Object.entries(uniqueFiles)) {
+    fetch(path)
+        .then((res) => res.json())
+        .then((data) => {
+            uniqueWalksheds[crossingName] = data;
+            console.log("Loaded unique walkshed:", crossingName);
+        })
+        .catch((err) => console.error("❌ Error loading unique walkshed:", crossingName, err));
+}
 
 // --- Click interaction on crossings  ---
 fetch('data/places_with_walksheds.geojson')
@@ -189,6 +210,7 @@ fetch('data/places_with_walksheds.geojson')
                     if (reachableLayer800) map.removeLayer(reachableLayer800);
                     if (reachableLayer400Outline) map.removeLayer(reachableLayer400Outline)
                     if (reachableLayer800Outline) map.removeLayer(reachableLayer800Outline)
+                    if (uniqueLayer) map.removeLayer(uniqueLayer);
 
                     // Filter 400m & 800m features for this crossing
                     const filtered400 = {
@@ -216,6 +238,19 @@ fetch('data/places_with_walksheds.geojson')
                             opacity: 1.0
                     }
                     }).addTo(map);
+
+                    // ⭐ UNIQUE WALKSHED for this crossing (comes between 800m and 400m)
+                    if (uniqueWalksheds[name]) {
+                        uniqueLayer = L.geoJSON(uniqueWalksheds[name], {
+                            style: {
+                                color: "#FF00FF",   // choose color (magenta for testing)
+                                weight: 4,
+                                opacity: 0.7
+                            }
+                        }).addTo(map);
+                    } else {
+                        console.warn("No unique walkshed found for:", name);
+                    }
 
                     // 400m OUTLINE (dark grey underlay)
                      reachableLayer400Outline = L.geoJSON(filtered400, {

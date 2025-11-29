@@ -45,7 +45,9 @@ for feature in places["features"]:
 # ----------------------------
 # Save joined file
 # ----------------------------
-with open("places_with_walksheds.geojson", "w", encoding="utf-8") as f:
+output_path = "./data/places_with_walksheds.geojson"
+
+with open(output_path, "w", encoding="utf-8") as f:
     json.dump(places, f, ensure_ascii=False, indent=2)
 
-print("Join complete → places_with_walksheds.geojson")
+print(f"Join complete → {output_path}")

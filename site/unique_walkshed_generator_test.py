@@ -4,66 +4,103 @@
 # (here represented by the informal crossings that are already being used by citizens)
 
 
-
 import json
+import geopandas as gpd
+import pandas as pd
+import os
+from shapely.geometry import shape
 
+# -------------------------------------------------------------
+# INPUT + OUTPUT
+# -------------------------------------------------------------
+INPUT_FILE = "data/reachable_lines_800m.geojson"
+OUTPUT_FOLDER = "data"
 
+# -------------------------------------------------------------
+# LOAD ALL 800m WALKSHEETS
+# -------------------------------------------------------------
+print("Loading reachable lines (800m)...")
+gdf = gpd.read_file(INPUT_FILE)
 
+# Ensure CRS is available
+if gdf.crs is None:
+    raise ValueError("❌ ERROR: The GeoJSON file has no CRS. It must have EPSG:3857 or EPSG:4326.")
 
-
-TARGET = "Outdoor Gym Crossing" #insert crossing name here 
-
-
-input_file = "data/reachable_lines_800m.geojson"
-safe_target = TARGET.replace(" ", "_")
-output_file = f"data/{safe_target}_uniquewalkshed.geojson"
-
-
-# Load input geojson
-with open(input_file, "r", encoding="utf-8") as f:
-    data = json.load(f)
-
-features = data["features"]
-
-# --- STEP 1: Build a mapping geometry → set of crossing_names
-
-def geom_key(feat):
-    """Returns a canonical JSON string of geometry for exact comparison."""
-    return json.dumps(feat["geometry"], sort_keys=True)
-
-geometry_crossing_map = {}
-
-for feat in features:
-    key = geom_key(feat)
-    crossing = feat["properties"]["crossing_name"]
-
-    if key not in geometry_crossing_map:
-        geometry_crossing_map[key] = set()
-
-    geometry_crossing_map[key].add(crossing)
-
-# --- STEP 2: Identify geometries used exclusively by Rue Cartier Crossing
-
-exclusive_geometry_keys = {
-    key for key, crossings in geometry_crossing_map.items()
-    if crossings == {TARGET}
+# Sort crossings into groups
+crossing_groups = {
+    name: gdf[gdf["crossing_name"] == name].copy()
+    for name in gdf["crossing_name"].unique()
 }
 
-# --- STEP 3: Extract the original features whose geometry is exclusive
+print(f"Found {len(crossing_groups)} crossings in the walkshed file.")
+print("Crossings:", list(crossing_groups.keys()))
 
-unique_features = [
-    feat for feat in features
-    if geom_key(feat) in exclusive_geometry_keys
+
+# -------------------------------------------------------------
+# FUNCTION: GENERATE UNIQUE WALKSHEETS FOR ONE CROSSING
+# -------------------------------------------------------------
+def generate_unique_for_crossing(target_name: str):
+    print(f"\n==============================")
+    print(f"🔍 Processing UNIQUE walkshed for: {target_name}")
+    print("==============================")
+
+    if target_name not in crossing_groups:
+        print(f"⚠️ ERROR: Crossing '{target_name}' not found in dataset.")
+        return
+
+    target_gdf = crossing_groups[target_name]
+
+    # Combine all OTHER crossings
+    others = [
+        g for name, g in crossing_groups.items()
+        if name != target_name
+    ]
+
+    if len(others) == 0:
+        print("⚠️ Only one crossing in dataset — everything would be unique.")
+        return
+
+    others_gdf = gpd.GeoDataFrame(pd.concat(others, ignore_index=True), crs=gdf.crs)
+
+    # Build spatial index for faster overlap checks
+    sindex = others_gdf.sindex
+
+    unique_features = []
+
+    for idx, row in target_gdf.iterrows():
+        geom = row.geometry
+
+        # quickly grab candidates via bbox
+        possible = list(sindex.intersection(geom.bounds))
+        candidates = others_gdf.iloc[possible]
+
+        # direct spatial intersection check
+        if not candidates.intersects(geom).any():
+            unique_features.append(row)
+
+    # Convert back to GeoDataFrame
+    out_gdf = gpd.GeoDataFrame(unique_features, crs=gdf.crs)
+
+    # Save file
+    safe_name = target_name.replace(" ", "_")
+    output_file = os.path.join(OUTPUT_FOLDER, f"{safe_name}_uniquewalkshed.geojson")
+
+    out_gdf.to_file(output_file, driver="GeoJSON")
+
+    print(f"✅ Saved {len(out_gdf)} unique features → {output_file}")
+
+
+# -------------------------------------------------------------
+# RUN FOR ALL FOUR CROSSINGS
+# -------------------------------------------------------------
+targets = [
+    "Avenue de l’Épée Crossing",
+    "Skatepark Crossing",
+    "Rue Cartier Crossing",
+    "Outdoor Gym Crossing"
 ]
 
-# --- STEP 4: Save result as new GeoJSON
+for crossing in targets:
+    generate_unique_for_crossing(crossing)
 
-output_geojson = {
-    "type": "FeatureCollection",
-    "features": unique_features
-}
-
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(output_geojson, f, indent=2)
-
-print(f"Saved {len(unique_features)} exclusive features to {output_file}")
+print("\n🎉 All unique walkshed files generated.")

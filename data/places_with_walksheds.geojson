@@ -14,8 +14,8 @@
         "name": "Avenue de l’Épée Crossing",
         "category": "Under_Construction",
         "description": "New crossing under construction by the City",
-        "walkshed_400m": "3,033",
-        "walkshed_800m": "11,514"
+        "walkshed_400m": "1,392",
+        "walkshed_800m": "7,581"
       }
     },
     {
@@ -31,8 +31,8 @@
         "name": "Avenue du Parc Crossing (van Horne)",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue du Parc and van Horne",
-        "walkshed_400m": "3,455",
-        "walkshed_800m": "17,204"
+        "walkshed_400m": "2,697",
+        "walkshed_800m": "11,601"
       }
     },
     {
@@ -48,8 +48,8 @@
         "name": "Avenue Thèrése-Lavoie-Roux Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue Thèrese-Lavoie-Roux.",
-        "walkshed_400m": "4,139",
-        "walkshed_800m": "10,713"
+        "walkshed_400m": "1,642",
+        "walkshed_800m": "8,739"
       }
     },
     {
@@ -65,8 +65,8 @@
         "name": "Avenue du Parc Crossing (Beaumont)",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue du Parc and Avenue Beaumont.",
-        "walkshed_400m": "4,512",
-        "walkshed_800m": "13,984"
+        "walkshed_400m": "2,739",
+        "walkshed_800m": "11,084"
       }
     },
     {
@@ -82,8 +82,8 @@
         "name": "Rue Clarke Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Rue Clarke",
-        "walkshed_400m": "6,935",
-        "walkshed_800m": "24,671"
+        "walkshed_400m": "4,516",
+        "walkshed_800m": "16,470"
       }
     },
     {
@@ -99,8 +99,8 @@
         "name": "Boulevard Saint Laurent Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Boulevard Saint Laurent",
-        "walkshed_400m": "10,546",
-        "walkshed_800m": "27,395"
+        "walkshed_400m": "6,759",
+        "walkshed_800m": "20,264"
       }
     },
     {
@@ -116,8 +116,8 @@
         "name": "Boulevard Rosemont Crossing",
         "category": "Formal_Crossing",
         "description": "Staircase up to the Rosemont Viaduc that allows users to descend again at the Avenue de Gaspé alignment",
-        "walkshed_400m": "9,244",
-        "walkshed_800m": "24,639"
+        "walkshed_400m": "6,063",
+        "walkshed_800m": "18,333"
       }
     },
     {
@@ -133,8 +133,8 @@
         "name": "Skatepark Crossing",
         "category": "Informal_Crossing",
         "description": "Informal crossing often cut by the Mile End Skatepark",
-        "walkshed_400m": "9,303",
-        "walkshed_800m": "29,123"
+        "walkshed_400m": "5,996",
+        "walkshed_800m": "20,985"
       }
     },
     {
@@ -150,8 +150,8 @@
         "name": "Outdoor Gym Crossing",
         "category": "Informal_Crossing",
         "description": "Informal crossing often cut between the outdoor gym and Rue Saint Denis, connecting to the Champs des Possibles. ",
-        "walkshed_400m": "8,299",
-        "walkshed_800m": "25,086"
+        "walkshed_400m": "5,769",
+        "walkshed_800m": "18,275"
       }
     },
     {
@@ -167,8 +167,8 @@
         "name": "Rue Saint Denis Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Rue Saint Denis",
-        "walkshed_400m": "5,916",
-        "walkshed_800m": "24,705"
+        "walkshed_400m": "4,642",
+        "walkshed_800m": "18,736"
       }
     },
     {
@@ -184,8 +184,8 @@
         "name": "Rue Saint Hubert Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Rue Saint Hubert",
-        "walkshed_400m": "8,450",
-        "walkshed_800m": "24,786"
+        "walkshed_400m": "5,660",
+        "walkshed_800m": "18,909"
       }
     },
     {
@@ -201,8 +201,8 @@
         "name": "Avenue Christophe Colombe Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue Christophe Colombe",
-        "walkshed_400m": "6,619",
-        "walkshed_800m": "22,863"
+        "walkshed_400m": "4,247",
+        "walkshed_800m": "15,578"
       }
     },
     {
@@ -218,8 +218,8 @@
         "name": "Avenue Papineau Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue Papineau",
-        "walkshed_400m": "7,321",
-        "walkshed_800m": "24,815"
+        "walkshed_400m": "4,532",
+        "walkshed_800m": "16,796"
       }
     },
     {
@@ -235,8 +235,8 @@
         "name": "Avenue de Lorimier Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Avenue de Lorimier",
-        "walkshed_400m": "6,746",
-        "walkshed_800m": "23,469"
+        "walkshed_400m": "3,953",
+        "walkshed_800m": "17,191"
       }
     },
     {
@@ -252,8 +252,8 @@
         "name": "Rue Masson Crossing",
         "category": "Formal_Crossing",
         "description": "Crossing underpass at Rue Masson",
-        "walkshed_400m": "6,992",
-        "walkshed_800m": "19,339"
+        "walkshed_400m": "4,540",
+        "walkshed_800m": "13,756"
       }
     },
     {
@@ -269,8 +269,8 @@
         "name": "Rue Cartier Crossing",
         "category": "Informal_Crossing",
         "description": "Informal crossing often cut near Avenue Papineau to avoid the larger underpass system",
-        "walkshed_400m": "6,957",
-        "walkshed_800m": "24,437"
+        "walkshed_400m": "4,841",
+        "walkshed_800m": "17,560"
       }
     },
     {
@@ -286,8 +286,8 @@
         "name": "Campus MIL Overpass",
         "category": "Formal_Crossing",
         "description": "Mixed-use crossing built as part of the Campus MIL project to connect with Acadie station.",
-        "walkshed_400m": "4,421",
-        "walkshed_800m": "17,965"
+        "walkshed_400m": "2,695",
+        "walkshed_800m": "11,598"
       }
     },
     {
@@ -303,8 +303,8 @@
         "name": "Gare du Parc Crossing",
         "category": "Formal_Crossing",
         "description": "Level crossing at Gare du Parc.",
-        "walkshed_400m": "4,676",
-        "walkshed_800m": "19,453"
+        "walkshed_400m": "2,140",
+        "walkshed_800m": "11,739"
       }
     }
   ]
