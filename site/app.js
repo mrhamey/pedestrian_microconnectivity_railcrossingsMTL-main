@@ -16,7 +16,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 20
 let streetsData = null;
 
 // --- Load the road network GeoJSON ---
-fetch('data/map.geojson')
+fetch('data/roadnetwork_mtl_CLIPPED.geojson')
     // this is a roadnetwork file that has been clipped to save resources and 
     // to focus on the study area. Tool used : https://mapshaper.org to save as csv, then https://geojson.io to convert csv to geojson
     .then(r => r.json())
