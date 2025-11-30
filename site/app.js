@@ -71,14 +71,7 @@ fetch('data/places_with_walksheds.geojson')
                     // of symbols
                 });
             },
-            onEachFeature: function (feature, layer) {
-                // Check if the feature has name and description
-                if (feature.properties && feature.properties.name && feature.properties.description) {
-                    layer.bindPopup(
-                        `<strong>${feature.properties.name}</strong><br>${feature.properties.description}`
-                    );
-                }
-            }
+            
         }).addTo(map);
     })
     .catch(err => console.error("❌ Error loading crossings GeoJSON:", err));
@@ -243,7 +236,7 @@ fetch('data/places_with_walksheds.geojson')
                     if (uniqueWalksheds[name]) {
                         uniqueLayer = L.geoJSON(uniqueWalksheds[name], {
                             style: {
-                                color: "#FF00FF",   // choose color (magenta for testing)
+                                color: "#E44EDB",   // choose color (magenta for testing)
                                 weight: 4,
                                 opacity: 0.7
                             }
