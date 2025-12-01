@@ -1,7 +1,7 @@
 # pedestrian_microconnectivity_railcrossingsMTL
 This is the repository for my GEOG 464 project at Concordia University. The website displays pedestrian crossings of the CP rail right-of-way in Montréal QC and analyses the walksheds of various formal and informal crossings. 
 
-File Structure
+## File Structure
 <pre>
 .
 ├── site 
@@ -38,15 +38,18 @@ File Structure
 
 
 
-Acknowledgements: 
+## Acknowledgements: 
 
 I would like to thank Professor Russell and Cameron Bruhbacker at Concordia University for teaching me everything I know about coding in Python. I would like to thank generative AI for assisting me with everything else that was needed for this project. 
 
-Licence 
+
+## Licence:
+
 See the [licence](LICENSE) file
 
 
-The project 
+## The project 
+
 This project, designed to be viewed through the index.html file, contains a website exploring microconnectivity issues related to the CP Rail right-of-way in Montréal, QC. The project uses formal and informal crossings as a starting point to investigate the extent to which they allow for users to cross the rail right-of-way barrier. A walkshed is defined as the length of network that is accessible within a given distance from a crossing; 5 and 10 minute walksheds are used throughout this project to show how users might cross the rail in their local neighbourhood to access destinations on opposite sides. The walkshed can be expressed as either a sum of networks in meters (useful for comparing between crossings) or illustrated on the map to show areas that are better served by crossings. 
 
 [Index.html:]( https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/index.html) 
@@ -65,8 +68,8 @@ The site folder contains the app.js file that builds the Leaflet webmap. It also
 - [unique_walkshed_generator_test.py](https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL-main/blob/main/site/unique_walkshed_generator_test.py) is an unfinished algorithm that was intended to generate a new layer that would show the network segments that are included only in the informal crossings, to show viewers on the map the area of the network that are within these informal crossings’ walksheds, and thus could be used to show which informal crossings would lead to the greatest increase in connectivity. 
     - However, the algorithm does not function as intended and includes many segments that are clearly within the walkshed of other crossings. Due to a lack of resources, I was unable to refine this further and try to come up with a solution.
 
-/Data: 
-The [/data](/data) folder contains all data files used for the construction of my web map
+[/Data](/data): 
+The /data folder contains all data files used for the construction of my web map
 
 - [places.geojson](/data/places.geojson) is a collection of all informal, formal, and under-construction crossings of the CP rail right-of-way in the study area.
 - [places_with_walksheds.geojson](/data/places_with_waksheds.geojson) contains the same information as places.geojson, just with the walkshed summary info added to it (see /site file explanations)
@@ -76,18 +79,18 @@ The [/data](/data) folder contains all data files used for the construction of m
           - see [reachable_lines_800m.geojson](/data/reachable_lines_800m.geojson) for the equivalent but at the larger, 10 minute walkshed. 
 
 [roadnetwork_clipped_pedestrian_default.geojson](/data/roadnetwork_clipped_pedestrian_default.geojson) is the road network file provided by the City of Montréal with some additional geometries added by me in order to integrate the various pedestrian paths (ex. Réseau vert) in the area. This file notably lacks all networks associated with the informal or under-construction crossings, such that the walkshed for formal crossings does not integrate any additional connectivity provided by the informal or under-construction crossings. 
-    - The other roadnetwork_clipped_pedestrian_XXX.geojson files (ex. [roadnetwork_clipped_pedestrian_Cartiercrossing.geojson](/data/roadnetwork_clipped_pedestrian_Cartiercrossing.geojson))are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
+
+- The other roadnetwork_clipped_pedestrian_XXX.geojson files (ex. [roadnetwork_clipped_pedestrian_Cartiercrossing.geojson](/data/roadnetwork_clipped_pedestrian_Cartiercrossing.geojson) ) are copies of this file but with changes for the informal and underconstruction crossings, such that the road network actually reflects access through these unofficial crossings. 
     
 - [Outdoor_Gym_Crossing_uniquewalkshed.geojson](/data/Outdoor_Gym_Crossing_uniquewalkshed.geojson) is a test unique walkshed file that shows the additional network added to the walksheds around the CP Rail right-of-way. It shows the issues in the algorithm (areas clearly within the walkshed of other crossings) and should not be considered for analysis. Again, for illustrative purposes only. 
 
 
-FAQ 
-Why does there appear to be floating network segments? 
+## FAQ 
+
+
+#### Why does there appear to be floating network segments? 
 This is due to the configuration and properties of my source road network file. Some road segments were still considered part of another segment despite being unconnected; therefore, they were considered to be part of the walkshed if the ‘parent’ segment was still within the area. 
 
-Why do all walksheds appear to end at segment ends rather than at a true 400m walkshed?  - This is because I was unable to troubleshoot why my algorithm which purported to cut the segments at the 400m-along-network-from-node, evidently did not do the cutting 
+#### Do you have further plans for this project? 
 
-Why were you unable to calculate the informal crossings that led to the greatest increase in network connectivity? 
-Again, similar to the question above about floating network segments, the configuration of my base road network was unable to properly compute network segments belonging to only one crossing’s walkshed. When trying to filter my walkshed data for the road segments that appear only in one crossing, there were many road segments included that were visibly within the walkshed of other crossings. I ran out of time to troubleshoot this further. 
-
-Do you have further plans for this project?  - I think it would be interesting to spend the time required to fix the algorithms and see if proper computation is possible. I think the solution lies somewhere in finding and configuring a better road network file. A larger project to undertake would be to create a website capable of computing walksheds based on user-submitted road, rail, and crossing network data, such that other cities’ connectivity issues could be properly analyzed. 
+I think it would be interesting to spend the time required to fix the algorithms and see if proper computation is possible. I think the solution lies somewhere in finding and configuring a better road network file. A larger project to undertake would be to create a website capable of computing walksheds based on user-submitted road, rail, and crossing network data, such that other cities’ connectivity issues could be properly analyzed. 
