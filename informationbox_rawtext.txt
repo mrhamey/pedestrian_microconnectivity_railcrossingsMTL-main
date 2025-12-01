@@ -1,0 +1,51 @@
+History
+
+Rail corridor built in 1876 as part of Montréal Northern Colonization Railyway into the Laurentides. Purchased by Canadian Pacific Railway (CP) in 1882. Mile End station exists from 1931-1970.
+The corridor is used today for ~10 daily vehicle transfers between the Côte Saint-Luc yard and the Port de Montréal. 
+The area began to gentrify in the 1980s and 1990s, now hosts thousands of jobs in converted warehouses and industrial buildings.
+The Réseau Vert multi-use path runs the majority of its length and traverses the city grid, though it doesn’t include any dedicated crossings of the rail itself. 
+Tension with CP as citizens begin to cut informal crossings through the chain link fence to bypass underpasses, or to access the underused space on CP land. 
+2019 - Canadian Transportation Agency rules on City’s 5 proposed level crossings; only the Gare du Parc and the de l’Épée crossings are approved, the ones in the highly-trafficked Mile End area are not. 
+The ruling also states that crossings come at the City’s expense, reducing political will
+2006 - Université de Montréal Campus MIL project arrives, renewing pressure and funding
+Construction of an underpass at Ave Thèrése-Lavoie-Roux in 2015, a pedestrian overpass connecting to Blvd de L’Acadie, and the de l’Épée crossing still under construction. 
+Ongoing trespassing fines and fatalities from informal crossings to seemingly cut a few minutes off the commute. 
+February 2022: woman struck and killed, leading to CP reducing speeds, increasing the use of the engine bells, and increasing patrolling. 
+Still, no new crossings are planned, and safety risks, security issues, and fines still continue.
+
+
+Network Connectivity & Equity 
+
+
+Connectivity in urban network design measures how many nodes (or points in the network) are accessible to each other.
+Also refers to the level of spatial integration in an area, with impacts on local social and ecological dynamics <br><br>
+Network porosity deals with the capacity of these connections to manage the flows of users across pedestrians, bikes, and other vehicles.<br><br>
+Project focuses on walksheds and pedestrian access to fit the scale of the study area (roughly 5km east-west), and the numerous pedestrian paths in the area.<br><br>
+Connectivity also concerns equity in the urban environment; the lack of crossings can lead to isolation of a neighbourhood from easy access to outside opportunities, or favour private car transport for local travel if pedestrian detours are long.
+Long detours or the use of staircases (see the 400m Papineau underpass) for crossings reduce or prohibit access for people with mobility constraints, and even when level crossings are cleared, they must be well designed to be even, have no gaps between pavement and the rails, and not cross on a significant angle to ensure mobility devices do not get stuck.
+Crossings ensure that some connectivity is provided to residents and visitors. However, the presence of informal crossings, often near formal crossings, reveals some dissatisfaction or unmet need among users, especially in the high-traffic Mile End area. 
+
+
+Results & Analysis
+
+The interactive graph shows the total cumulative length of the network within the walksheds of each crossing, arranged West-East; the higher the number, the more connected the crossing.
+Most well-connected crossings are between Clarke and Saint Denis, with the two highest being the Saint Laurent formal crossing and the Skatepark informal crossing. 
+Probably due to the density of overlapping infrastructure in the area, namely the Rosemont Viaduct above. 
+Pedestrian crossings embedded within road underpasses mean that they are located within more complex infrastructure areas
+At the extreme, the Avenue Papineau crossing involves several feeder roads and connections, as the underpass effectively passes under an additional three blocks of distance (passing under Rue des Carrières).
+Crossings to which the regular street grid tends to approach without disruption tend to have higher walksheds due to the interconnection with other streets beyond the immediate lead-up. 
+The additional connectivity (or additional road network in the walkshed) provided by each informal or under-construction crossing is shown in pink.
+Overall, very little additional network is served by these informal crossings. 
+This shows the extent that direct connectivity may not be the prime driver of these crossings, and may instead be linked to other forms of transport ‘friction’ - mainly, the lack of accessible level crossings and relatively extensive detours for grade-separated crossings. 
+- Despite no absolute connectivity gains being found through this GIS project, it still illustrates connectivity issues and visualizes navigation in the area, and also opens up further research opportunities in using these algorithms to analyze other distances, forms of transportation, and network configurations in other cities. Research Methods & Limitations 
+
+Project is based almost entirely on a crossing point dataset manually created from maps and fieldwork, as well as an edited road network file
+Informal crossings assessed in early October 2025 and change over time as CP Rail authorities patrol and seal holes in the fence. 
+Road network file provided by the City of Montréal, but lacked pedestrian paths (notably, the Réseau Vert trail) and informal rail crossings; these were drawn by hand in geojson.io 
+Python algorithm used to associate crossings to nearest road network nodes, and then the walkshed was calculated using Djiesktra’s shortest-path algorithm in the Networkx package, using the 400m and 800m distances, representing 5 and 10 minutes of walking respectively. 
+Road segments are cut as the maximum distance is approached to ensure accuracy. 
+A separate algorithm was built to generate the network added by the informal or under-construction crossings. 
+Walksheds exported and added as toggleable layers to the webmap, and their summary data is viewable per crossing or in the table in the Results & Analysis section. 
+- All files related to this project can be found in my <a href=“https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL”>GitHub repository</a>. A readme file is provided with more information on the different files and operations, and a bibliography is also provided. 
+
+

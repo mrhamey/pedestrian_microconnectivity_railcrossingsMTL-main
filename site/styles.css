@@ -1,6 +1,10 @@
 /* importing the exo font, used by Exo rail */ 
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
+ul ul { /* makes sure my bullets are indented properly */
+    margin-left: 20px !important;
+    padding-left: 20px !important;
+}
 
 /* LEGEND STYLES */ 
 .legend ul {
@@ -157,7 +161,7 @@ html, body {
   padding: 1em;
   background-color: #fafafa;
   border-right: 1px solid #ccc;
-  max-height: 400px;
+  max-height: 350px;
 }
 
 /* Right column: Text / Info box */
@@ -206,7 +210,7 @@ body {
 .tab-content {
   width: 100%;
   min-height: 200px; /* optional fixed height */
-  padding: 1.5em;
+  padding: 2.5em;
 }
 
 .tab-page {
