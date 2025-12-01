@@ -37,7 +37,9 @@ Crossings to which the regular street grid tends to approach without disruption 
 The additional connectivity (or additional road network in the walkshed) provided by each informal or under-construction crossing is shown in pink.
 Overall, very little additional network is served by these informal crossings. 
 This shows the extent that direct connectivity may not be the prime driver of these crossings, and may instead be linked to other forms of transport ‘friction’ - mainly, the lack of accessible level crossings and relatively extensive detours for grade-separated crossings. 
-- Despite no absolute connectivity gains being found through this GIS project, it still illustrates connectivity issues and visualizes navigation in the area, and also opens up further research opportunities in using these algorithms to analyze other distances, forms of transportation, and network configurations in other cities. Research Methods & Limitations 
+- Despite no absolute connectivity gains being found through this GIS project, it still illustrates connectivity issues and visualizes navigation in the area, and also opens up further research opportunities in using these algorithms to analyze other distances, forms of transportation, and network configurations in other cities. 
+
+Research Methods & Limitations 
 
 Project is based almost entirely on a crossing point dataset manually created from maps and fieldwork, as well as an edited road network file
 Informal crossings assessed in early October 2025 and change over time as CP Rail authorities patrol and seal holes in the fence. 
