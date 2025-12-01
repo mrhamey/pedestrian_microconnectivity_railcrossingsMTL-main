@@ -15,14 +15,17 @@ ul ul { /* makes sure my bullets are indented properly */
 
 .legend li span.dot-informal {
   color: #96bbf4ff;
+  font-size: 20px;
 }
 
 .legend li span.dot-underconstruction {
   color: #f7f793;
+  font-size: 20px;
 }
 
 .legend li span.dot-formal {
   color: #446AA2;
+  font-size: 20px;
 }
 
 /* Line style base */
@@ -71,13 +74,17 @@ ul ul { /* makes sure my bullets are indented properly */
 .legend li span.rail-line {
   width: 30px;
   height: 4px;
+  display: inline-block;      /* ensures border renders properly */
   background-image: repeating-linear-gradient(
-    45deg,
-    #ccc,
-    #ccc 4px,
-    white 4px,
-    white 8px
+    90deg,
+    #707070,
+    #707070 8px,
+    white 8px,
+    white 16px
   );
+  border: 1px solid #555;     /* thin grey outline */
+  box-sizing: border-box;     /* ensures border does NOT increase total size */
+  border-radius: 2px;         /* optional — matches your smoother legend style */
 }
 /* Making my reseau vert striped line in the legend (two lines) 
 /* Base green line for reseau vert */
@@ -229,7 +236,7 @@ body {
   background-color: #e0e0e0;
   border: 1px solid #ccc;
   border-bottom: none; /* To make it appear connected to content */
-  padding: 12px 0;
+  padding: 12px 3px;
   cursor: pointer;
   text-align: center;
   font-weight: normal;
@@ -237,6 +244,7 @@ body {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   transition: background-color 0.3s;
+  font-size: 0.9rem;
 }
 
 
@@ -264,7 +272,7 @@ body {
 .legend {
   background-color: white;
   color: black;
-  padding: 1.5em; /* Legend has padding */
+  padding: 1em; /* Legend has padding */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   flex-shrink: 0;

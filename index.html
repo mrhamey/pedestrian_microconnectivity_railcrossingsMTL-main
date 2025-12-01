@@ -66,15 +66,15 @@
   <div class="tab-header">
     <button class="tab-link active" onclick="openTab(event, 'tab1')">About</button>
     <button class="tab-link" onclick="openTab(event, 'tab2')">History</button>
-    <button class="tab-link" onclick="openTab(event, 'tab3')">Network Connectivity and Equity</button>
+    <button class="tab-link" onclick="openTab(event, 'tab3')">Network Connectivity & Equity</button>
     <button class="tab-link" onclick="openTab(event, 'tab4')">Results & Analysis</button>
-    <button class="tab-link" onClick="openTab(event, 'tab5')">Research Methods and Limitations</button>
+    <button class="tab-link" onClick="openTab(event, 'tab5')">Research Methods & Limitations</button>
   </div> 
 
   <div class="tab-content">
    <div id="tab1" class="tab-page active">
-      <p><strong>Montréal's otherwise regular street grid is broken at various points by rail right of ways, in use by 
-      either its commuter rail network (EXO) or freight rail (CP Rail). </strong><br><br> This project focuses on the rail dividing the boroughs of Plateau Mont Royal 
+      <p><strong>Montréal's otherwise regular street grid is broken at various points by rail corridors in use by 
+      either its commuter rail network (EXO) or freight rail (usually CP Rail). </strong><br><br> This project focuses on the rail dividing the boroughs of Le Plateau-Mont-Royal 
       and Outremont in the South from the boroughs of Villeray–Saint-Michel–Parc-Extension and Rosemont-La Petite-Patrie. <br><br>
     
       This project analyses the walksheds of different crossings in the area to assess the extent to his rail forms a barrier to (pedestrian) network connectivity. <strong>A walkshed is the area of network that is reachable on foot within a certain time from a point; for the microconnectivity scale of this project, 400m and 800m walksheds are analysed, representing 5- and 10-minute walking radii. </strong> <br><br>
@@ -84,9 +84,9 @@
       homes, their workplaces, and other places of interest - work that is already undertaken by the City in the case of the new 
       crossing planned at the De l'Épée crossing in Outremont. <br> <br>
       
-      This project was made by Michael Rhamey for GEOG 464 at Concordia University. <br> <br>
+      All files related to this project can be found in my <a href="https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL">GitHub repository</a>. A raw text version of this tabbed information box is provided for those using screenreaders (incompatible with this website), as well as a bibliography file.     <br><br>
+      This project was made by Michael Rhamey for GEOG 464 at Concordia University. 
 
-      All files related to this project can be found in my <a href="https://github.com/mrhamey/pedestrian_microconnectivity_railcrossingsMTL">GitHub repository</a>. A raw text version of this tabbed information box is provided for those using screenreaders (incompatible with this website), as well as a bibliography file.     
     </p>
     </div>
     <div id="tab2" class="tab-page">
@@ -155,7 +155,7 @@
   <li>Connectivity also concerns equity in the urban environment; the lack of crossings can lead to isolation of a neighbourhood from easy access to outside opportunities, or favour private car transport for local travel if pedestrian detours are long.
   </li>    
     <ul>
-      <li>Long detours or the use of staircases (see the 400m Papineau underpass) for crossings reduce or prohibit access for people with mobility constraints, and even when level crossings are cleared, they must be well designed to be even, have no gaps between pavement and the rails, and not cross on a significant angle to ensure mobility devices do not get stuck.
+      <li>Long detours or the use of staircases (see the 400m Papineau underpass) for crossings reduce or prohibit access for people with mobility constraints, and even when level crossings are implemented, they must be well designed to be even, have no gaps between pavement and the rails, and not cross on a significant angle to ensure mobility devices do not get stuck.
       </li>
     </ul>
     <br>
@@ -212,7 +212,7 @@
     </div>
     <div id="tab5" class="tab-page">
 <ul>
-  <li>Project is based almost entirely on a crossing point dataset manually created from maps and fieldwork, as well as an edited road network file.
+  <li>The project is based almost entirely on a crossing point dataset manually created from maps and fieldwork, as well as an edited road network file.
       <ul>
         <li>Informal crossings assessed in early October 2025 and change over time as CP Rail authorities patrol and seal holes in the fence.</li>
         <li>Road network file provided by the City of Montréal, but lacked pedestrian paths (notably, the Réseau Vert trail) and informal rail crossings; these were drawn by hand in geojson.io</li>
@@ -220,7 +220,7 @@
       <br>
   </li>
 
-  <li>Python algorithm used to associate crossings to nearest road network nodes, and then the walkshed was calculated using Djiesktra’s shortest-path algorithm in the Networkx package, using the 400m and 800m distances to represent 5 and 10 minutes of walking, respectively.
+  <li>Python algorithm used to associate crossings to nearest road network nodes, and then the walkshed was calculated using <a href="https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/">Djiesktra’s shortest-path algorithm</a> in the Networkx package, using the 400m and 800m distances to represent 5 and 10 minutes of walking, respectively.
       
       <ul>
         <li>Road segments are cut as the maximum distance is approached to ensure accuracy.</li>
